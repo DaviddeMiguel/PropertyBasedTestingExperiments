@@ -1,7 +1,7 @@
 package com.trov.propertybasedtestingexperiments.di
 
 import com.trov.propertybasedtestingexperiments.MainViewModel
-import com.trov.propertybasedtestingexperiments.repository.SettingsRepository
+import com.trov.propertybasedtestingexperiments.MarketManager
 
 class Provide private constructor() {
   init {
@@ -14,8 +14,8 @@ class Provide private constructor() {
       return MainViewModel(timesClickedRepository())
     }
 
-    fun timesClickedRepository(): SettingsRepository {
-      return SettingsRepository()
+    fun timesClickedRepository(): MarketManager {
+      return MarketManager()
     }
   }
 }

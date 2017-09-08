@@ -61,7 +61,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:visibility="@{data.progressVisible ? View.VISIBLE : View.INVISIBLE}"
-        app:layout_constraintBottom_toTopOf="@+id/save_feature_state"
+        app:layout_constraintBottom_toTopOf="@+id/do_something"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toggleButton"
@@ -69,14 +69,14 @@
         />
 
     <Button
-        android:id="@+id/save_feature_state"
+        android:id="@+id/do_something"
         android:layout_width="362dp"
         android:layout_height="52dp"
         android:layout_marginBottom="52dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:onClick="@{() -> data.saveFeatureState()}"
-        android:text="Save feature state"
+        android:onClick="@{() -> data.doSomething()}"
+        android:text="Do something"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

@@ -1,20 +1,19 @@
 package com.trov.propertybasedtestingexperiments
 
 import android.databinding.ObservableBoolean
-import com.trov.propertybasedtestingexperiments.repository.SettingsRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-class MainViewModel(val repository: SettingsRepository) {
+class MainViewModel(val manager: MarketManager) {
 
   val subscriptions = CompositeDisposable()
   val featureEnabled = ObservableBoolean()
   val progressVisible = ObservableBoolean()
 
-  fun saveFeatureState() {
+  fun doSomething() {
     subscriptions.add(
-        repository.enableFeature(featureEnabled.get())
+        manager.isValidRegion(Market.AU)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .doOnSubscribe { _ ->
