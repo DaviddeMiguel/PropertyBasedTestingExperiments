@@ -1,4 +1,4 @@
-package com.trov.propertybasedtestingexperiments.rx.util
+package com.trov.propertybasedtestingexperiments.util
 
 import io.reactivex.android.plugins.RxAndroidPlugins
 import io.reactivex.plugins.RxJavaPlugins

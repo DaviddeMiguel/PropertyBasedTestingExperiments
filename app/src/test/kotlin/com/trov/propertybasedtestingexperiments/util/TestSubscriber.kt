@@ -1,4 +1,4 @@
-package com.trov.propertybasedtestingexperiments.databinding.util
+package com.trov.propertybasedtestingexperiments.util
 
 import android.databinding.Observable
 import android.databinding.ObservableBoolean
@@ -44,36 +44,6 @@ internal class TestSubscriber private constructor() {
   private fun addNewValue(value: Any) {
     values.add(value)
   }
-
-//  /**
-//   * Asserts that there are values set.
-//
-//   * @throws AssertionError if there were any values
-//   * *
-//   * @since 1.1.0
-//   */
-//  fun assertNoValues() {
-//    val s = values.size
-//    if (s != 0) {
-//      assertionError("No values expected yet some set: " + s)
-//    }
-//  }
-
-//  /**
-//   * Asserts that the given number of values are set.
-//
-//   * @param count the expected number of values set
-//   * *
-//   * @throws AssertionError if there were more or fewer values set than specified by `count`
-//   * *
-//   * @since 1.1.0
-//   */
-//  fun assertValueCount(count: Int) {
-//    val s = values.size
-//    if (s != count) {
-//      assertionError("Number of values differ; expected: $count, actual: $s")
-//    }
-//  }
 
   /**
    * Asserts that the set values, in order, are the specified items.

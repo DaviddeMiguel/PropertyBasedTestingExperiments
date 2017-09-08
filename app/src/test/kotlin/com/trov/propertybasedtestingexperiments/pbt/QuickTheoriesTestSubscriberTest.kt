@@ -1,6 +1,7 @@
-package com.trov.propertybasedtestingexperiments.databinding.util
+package com.trov.propertybasedtestingexperiments.pbt
 
 import android.databinding.ObservableField
+import com.trov.propertybasedtestingexperiments.util.TestSubscriber
 import org.junit.Test
 import org.quicktheories.quicktheories.QuickTheory.qt
 import org.quicktheories.quicktheories.generators.SourceDSL.booleans

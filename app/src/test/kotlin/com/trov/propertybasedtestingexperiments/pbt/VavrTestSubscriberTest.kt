@@ -1,7 +1,8 @@
-package com.trov.propertybasedtestingexperiments.databinding.util
+package com.trov.propertybasedtestingexperiments.pbt
 
 import android.annotation.SuppressLint
 import android.databinding.ObservableField
+import com.trov.propertybasedtestingexperiments.util.TestSubscriber
 import io.vavr.CheckedFunction1
 import io.vavr.collection.List
 import io.vavr.test.Arbitrary

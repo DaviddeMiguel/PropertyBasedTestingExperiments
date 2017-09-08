@@ -1,8 +1,9 @@
-package com.trov.propertybasedtestingexperiments.databinding.util
+package com.trov.propertybasedtestingexperiments.pbt
 
 import android.databinding.ObservableField
 import com.pholser.junit.quickcheck.Property
 import com.pholser.junit.quickcheck.runner.JUnitQuickcheck
+import com.trov.propertybasedtestingexperiments.util.TestSubscriber
 import org.junit.runner.RunWith
 
 

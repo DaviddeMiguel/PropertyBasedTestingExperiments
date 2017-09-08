@@ -1,8 +1,9 @@
-package com.trov.propertybasedtestingexperiments.databinding.util
+package com.trov.propertybasedtestingexperiments.pbt
 
 import android.databinding.ObservableBoolean
 import android.databinding.ObservableField
 import android.databinding.ObservableInt
+import com.trov.propertybasedtestingexperiments.util.TestSubscriber
 import org.junit.Test
 import java.util.*
 import kotlin.test.fail
@@ -108,51 +109,5 @@ class TestSubscriberTest {
     } catch (ignored: AssertionError) {
 
     }
-
   }
-
-//  @Test
-//  @Throws(Exception::class)
-//  fun assertNoValues_isSuccessWhenNoValuesAreSet() {
-//    val observable = ObservableField<String>()
-//    val subscriber = TestSubscriber.create(observable)
-//
-//    subscriber.assertNoValues()
-//  }
-
-//  @Test
-//  @Throws(Exception::class)
-//  fun assertNoValues_throwsAssertionErrorWhenThereWasSomeValue() {
-//    val observable = ObservableField<String>()
-//    val subscriber = TestSubscriber.create(observable)
-//    observable.set("Some value")
-//
-//    try {
-//      subscriber.assertNoValues()
-//      fail("The test failed because there was at least 1 value and the subscriber says there was none")
-//    } catch (ignored: AssertionError) {
-//
-//    }
-//  }
-
-//  @Test
-//  @Throws(Exception::class)
-//  fun assertValueCount_countsTheNumberOfValuesThatTheObservableHad() {
-//    //David: This test could clearly use Property Based Testing: https://trovinc.atlassian.net/wiki/display/ENG/2017/01/18/Property+based+testing
-//
-//    val observable1 = ObservableField<String>()
-//    val subscriber1 = TestSubscriber.create(observable1)
-//    observable1.set("Some value")
-//
-//    subscriber1.assertValueCount(1)
-//
-//    val observable2 = ObservableField<String>()
-//    val subscriber2 = TestSubscriber.create(observable2)
-//    observable2.set("Some value 1")
-//    observable2.set("Some value 2")
-//    observable2.set("Some value 3")
-//    observable2.set("Some value 4")
-//
-//    subscriber2.assertValueCount(4)
-//  }
 }
